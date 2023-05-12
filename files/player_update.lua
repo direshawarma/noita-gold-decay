@@ -1,4 +1,4 @@
--- Thanks go Goki for the original work - https://github.com/gokiburikin/gkbrkn_noita
+-- Thanks to Goki for the original code and concept - https://github.com/gokiburikin/gkbrkn_noita
 function IsGoldNuggetDecayTracked( entity )
     return EntityGetFirstComponent( entity, "LuaComponent", "decaying_gold" ) ~= nil;
 end
