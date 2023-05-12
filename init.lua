@@ -1,4 +1,5 @@
--- Thanks go Goki for the original work - https://github.com/gokiburikin/gkbrkn_noita
+-- Thanks to Goki for the original code and concept - https://github.com/gokiburikin/gkbrkn_noita
+
 function DoFileEnvironment( filepath, environment )
     if environment == nil then environment = {} end
     local f = loadfile( filepath );
