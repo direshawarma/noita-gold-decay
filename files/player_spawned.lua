@@ -3,6 +3,6 @@ if EntityGetFirstComponent( player_entity, "LuaComponent", "gold_decay" ) == nil
     EntityAddComponent( player_entity, "LuaComponent", {
         _tags="gold_decay",
         script_source_file="mods/gold_decay/files/player_update.lua",
-        execute_every_n_frame="15", -- it's fine every half second
+        execute_every_n_frame="1",
     });
 end
