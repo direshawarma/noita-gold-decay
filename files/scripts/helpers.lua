@@ -1,4 +1,4 @@
--- dofile_once( "mods/gold_decay/files/helpers.lua" )
+-- dofile_once( "mods/gold_decay/files/scripts/helpers.lua" )
 
 function qprint(a) 
     print("gold_decay", a)

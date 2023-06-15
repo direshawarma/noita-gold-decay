@@ -1,4 +1,4 @@
-dofile_once( "mods/gold_decay/files/helpers.lua" )
+dofile_once( "mods/gold_decay/files/scripts/helpers.lua" )
 
 -- Thanks to Goki for the original code and concept - https://github.com/gokiburikin/gkbrkn_noita
 

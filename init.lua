@@ -1,4 +1,9 @@
--- Thanks to Goki for the original code and concept - https://github.com/gokiburikin/gkbrkn_noita
+local decay_mode = ModSettingGet("gold_decay.mode")
+dofile_once( "mods/gold_decay/files/scripts/helpers.lua" )
+qprint("Decay mode: " .. decay_mode)
+if decay_mode ~= "off" then
+    ModLuaFileAppend("data/scripts/perks/perk_list.lua", "mods/gold_decay/files/scripts/perk_list.lua")
+end
 
 function DoFileEnvironment( filepath, environment )
     if environment == nil then environment = {} end
@@ -23,8 +28,7 @@ function OnModPostInit()
 end
 
 function OnPlayerSpawned( player_entity )
-    DoFileEnvironment( "mods/Gold_Decay/files/player_spawned.lua", { player_entity = player_entity } );
-
+    DoFileEnvironment( "mods/Gold_Decay/files/scripts/player_spawned.lua", { player_entity = player_entity } );
 end
 
 function OnPlayerDied( player_entity ) 

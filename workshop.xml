@@ -2,9 +2,9 @@
 <Mod
 	name="Gold Decay"
 	description="A standalone version of the Gold Decay function from the now-defunct Goki's Things"
-	tags="gameplay, tweaks, cheats"
+	tags="gameplay, tweaks, cheats, quality of life"
 	dont_upload_folders=""
-	dont_upload_files=""
+	dont_upload_files="*.xcf"
 > 
 </Mod>	
 	
