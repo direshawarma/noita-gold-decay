@@ -6,30 +6,24 @@ mod_settings_version = 1
 mod_settings =
 {
   {
-    category_id = "general_settings",
-    ui_name = "General",
-    settings = {
-      {
-        id = "mode",
-        ui_name = "Decay Mode",
-        ui_description = [[Determines how Gold Decay is applied]],
-        value_default = "perk",
-        values = {
-          {"perk", "Replace Gold is Forever"}, {"always", "Get Perk on Spawn"},
-          {"off", "Disabled"}
-        },
-        scope = MOD_SETTING_SCOPE_RUNTIME_RESTART,
-      },
-      {
-        id = "multiplier",
-        ui_name = "Dust Percentage",
-        ui_description = [[Nuggets drop this much gold upon decay]],
-        value_default = 100,
-        value_min = 1,
-        value_max = 100,
-        scope = MOD_SETTING_SCOPE_RUNTIME_RESTART,
-      }
-    }
+    id = "mode",
+    ui_name = "Decay Mode",
+    ui_description = [[Determines how Gold Decay is applied]],
+    value_default = "perk",
+    values = {
+      {"perk", "Replace Gold is Forever"}, {"always", "Get Perk on Spawn"},
+      {"off", "Disabled"}
+    },
+    scope = MOD_SETTING_SCOPE_RUNTIME_RESTART,
+  },
+  {
+    id = "multiplier",
+    ui_name = "Dust Percentage",
+    ui_description = [[Nuggets drop this much gold upon decay]],
+    value_default = 100,
+    value_min = 1,
+    value_max = 100,
+    scope = MOD_SETTING_SCOPE_RUNTIME_RESTART,
   }
 }
 
