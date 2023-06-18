@@ -1,8 +1,10 @@
 # noita-gold-decay
 
-A standalone version of the Gold Decay function from the now-defunct Goki's Things
+Not enough time to pick up those gold nuggets? Gold is Forever leaves so many nuggets around that your system chokes on the physics calculations? Look no further, the best of both worlds is here!
 
-Gold decay causes gold nuggets that despawn to drop their value in gold dust. It's like Gold is Forever, but the physics engine doesn't go nuts if you have too many uncollected nuggets around.
+Gold decay replaces gold nuggets with their value in gold dust when they expire, letting you pick up the gold at your leisure without melting your CPU.
+
+This mod replaces the vanilla Gold is Forever perk with the Gold Decay perk in the perk pool. There is an option to receive the perk on spawn.
 
 # Installation
 
