@@ -4,4 +4,5 @@ dofile_once( "mods/gold_decay/files/scripts/helpers.lua" )
 
 function item_pickup( entity_item, entity_pickupper, item_name )
     EntityRemoveComponent( entity_item, EntityGetFirstComponent( entity_item, "LuaComponent", "decaying_gold"));
+    EntityRemoveComponent( entity_item, EntityGetFirstComponent( entity_item, "LuaComponent", "dust_trails"));
 end 
