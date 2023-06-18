@@ -31,6 +31,15 @@ mod_settings =
     ui_description = [[Nuggets will drop some of their gold in dust over time, leaving trails as they move around]],
     value_default = false,
     scope = MOD_SETTING_SCOPE_RUNTIME_RESTART,
+  },
+  {
+    id = "dust_trail_interval",
+    ui_name = "Dust Trail Interval",
+    ui_description = [[The number of frames between checks to see whether the nugget can drop some dust]],
+    value_default = 30,
+    value_min = 1,
+    value_max = 900,
+    scope = MOD_SETTING_SCOPE_RUNTIME_RESTART,
   }
 }
 
