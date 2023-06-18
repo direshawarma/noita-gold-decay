@@ -24,6 +24,13 @@ mod_settings =
     value_min = 1,
     value_max = 100,
     scope = MOD_SETTING_SCOPE_RUNTIME_RESTART,
+  },
+  {
+    id = "dust_trails",
+    ui_name = "Dust Trails",
+    ui_description = [[Nuggets will drop some of their gold in dust over time, leaving trails as they move around]],
+    value_default = false,
+    scope = MOD_SETTING_SCOPE_RUNTIME_RESTART,
   }
 }
 
