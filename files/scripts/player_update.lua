@@ -20,6 +20,10 @@ for _,gold_nugget in pairs( gold_nuggets ) do
                 remove_after_executed = "0",
                 script_item_picked_up = "mods/Gold_decay/files/scripts/gold_trail.lua",
             });
+            EntityAddComponent( gold_nugget, "LuaComponent", {
+                _tags = "original_value",
+                value_int = getInternalVariableValue( gold_nugget, "gold_value", "value_int" ),
+            });
         end
         EntityAddComponent( gold_nugget, "LuaComponent", {
             execute_every_n_frame = "-1", -- on add/remove event only
